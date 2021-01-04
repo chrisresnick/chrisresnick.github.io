@@ -99,11 +99,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		/* background-color: skyblue; */
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, rgb(50,50,255) 15%,rgb(100,100,255));
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg,  rgb(50,50,255) 15%,rgb(100,100,255));
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, rgb(50,50,255), 15%,rgb(100,100,255));
+		background-image: url("images/overlay.png"), linear-gradient(45deg, rgb(50,50,255) 15%,rgb(100,100,255));
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -480,6 +480,8 @@ input, select, textarea {
 
 		.statistics .style3 #school-text {
 			color: black;
+			margin-top: 1px;
+			margin-bottom: 1px;
 		}
 
 		.row > .off-12 {
