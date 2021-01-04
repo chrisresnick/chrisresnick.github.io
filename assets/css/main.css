@@ -470,7 +470,8 @@ input, select, textarea {
 
 		.project-button-holder {
 			display: flex;
-			justify-content: space;
+			justify-content: space-around;
+			width: 50%;
 		}
 
 		.school-logo {
@@ -2849,6 +2850,9 @@ input, select, textarea {
 	}
 	.project-info {
 		width: 75%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 		/* .features li {
