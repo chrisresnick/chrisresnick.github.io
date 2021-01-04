@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Some Bars</title>
+    <link rel="icon" type="image/png" href="./imgs/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <div class="wraper">
+        <div class="app">
+            <h1>Sort Some Bars</h1>
+            <div class="main">
+                <div class="infoHolder">
+                    <div class="info">
+
+                    </div>
+                </div>
+                <div class="squareHolder">
+
+                </div>
+            </div>
+            <div class="uiHolder">
+                <div class="linkBtns">
+                    <label for="github">See The Code</label>
+                    <img class="linkImg" id="github" src="./imgs/GitHub-Mark-32px.png">
+                </div>
+                <div class = "ui">
+                    <div class ="main buttons">
+                        <button id="shuffle">Shuffle</button>
+                        <button id="merge">Merge Sort</button>
+                        <button id="quick">Quick Sort</button>
+                        <button id="bubble">Bubble Sort</button>
+                        <button id="insertion">Insertion Sort</button>
+                    </div>
+                    <div class ="sliders">
+                        <div class="slider">
+                            <label for="range">Number of Bars:</label>
+                            <input id="range" type=range min=5 max=40 value=40>
+                        </div>
+                        <div class="slider">
+                            <lable for="speed">Animation Speed:</lable>
+                            <input id="speed" type=range min=0, max = 100, value=100>
+                        </div>
+                    </div>
+                </div>
+                <div class="linkBtns">
+                    <label for="linkedin">App by Chris Resnick</label>
+                    <img class="linkImg" id="linkedin" src="./imgs/LI-Logo.png">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
