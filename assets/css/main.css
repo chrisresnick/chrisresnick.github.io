@@ -473,6 +473,15 @@ input, select, textarea {
 			justify-content: space;
 		}
 
+		.school-logo {
+			width: 96px;
+			height: 96px;
+		}
+
+		.statistics .style3 #school-text {
+			color: black;
+		}
+
 		.row > .off-12 {
 			margin-left: 100%;
 		}
@@ -2825,6 +2834,7 @@ input, select, textarea {
 		align-items: center;
 		width: 80%;
 		height: 20vh;
+		margin-top: 3vh;
 	}
 
 	.project * {
@@ -2918,7 +2928,7 @@ input, select, textarea {
 			}
 
 			.statistics li.style3 {
-				background-color: #a89cc8;
+				background-color: white;
 			}
 
 			.statistics li.style4 {
