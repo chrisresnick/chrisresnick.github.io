@@ -2836,7 +2836,6 @@ input, select, textarea {
 		display: flex;
 		align-items: center;
 		width: 80%;
-		height: 20vh;
 		margin-top: 3vh;
 	}
 
