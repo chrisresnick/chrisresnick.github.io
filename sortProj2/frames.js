@@ -6,13 +6,15 @@ class Frame {
 }
 
 class Frames {
-    constructor(){
+    constructor(opsCount){
         this.head = null;
         this.tail = null;
         this.length = 0;
+        this.opsCount = opsCount;
     }
 
     push(data) {
+        data.push({ops: this.opsCount.ops(), comps:this.opsCount.comps()});
         const node = new Frame(data);
         if(this.length == 0) {
             this.head = node;
@@ -20,7 +22,7 @@ class Frames {
         }
         else if (this.length == 1){
             this.tail = node;
-            this.head.next = this.tail
+            this.head.next = this.tail;
         }
         else {
             this.tail.next = node;
@@ -31,6 +33,7 @@ class Frames {
     }
 
     unshift(data) {
+        data.push({ops: this.opsCount.ops(), comps:this.opsCount.comps()});
         const node = new Frame(data);
         if(this.length == 0) {
             this.head = node;
@@ -38,11 +41,11 @@ class Frames {
         }
         else if (this.length == 1){
             this.head = node;
-            this.head.next = this.tail
+            this.head.next = this.tail;
         }
         else {
-            node.next = this.head
-            this.head = node
+            node.next = this.head;
+            this.head = node;
         }
         this.length++;
         return this.length;
